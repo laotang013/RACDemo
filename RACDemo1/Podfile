@@ -1,0 +1,7 @@
+
+platform :ios, '8.0'
+
+target 'RACDemo1’ do
+pod 'ReactiveCocoa','~>2.1.8'
+end
+inhibit_all_warnings!
