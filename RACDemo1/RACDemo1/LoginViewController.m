@@ -12,6 +12,7 @@
 #import "User.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>
+#import "TwoViewController.h"
 @interface LoginViewController ()
 /**viewModel*/
 @property(nonatomic,strong) LoginViewModel *viewModel;
@@ -53,7 +54,27 @@
         [self.viewModel login];
     }];
     
+    //跳转
+    [[self.nextButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        TwoViewController *VC = [[TwoViewController alloc]init];
+        [RACObserve(VC, num) subscribeNext:^(id x) {
+            NSLog(@"%@",x);
+        }];
+        //订阅信号
+        VC.subject = [RACSubject subject];
+        [VC.subject subscribeNext:^(id x){
+            NSLog(@"跳转了界面 %@",x);
+            
+        }completed:^{
+            NSLog(@"完成");
+        }];
+        [self.navigationController pushViewController:VC animated:YES];
+    }];
+    
+   
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning {

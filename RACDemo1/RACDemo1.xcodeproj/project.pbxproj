@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C98029E31F6B666100529F4C /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98029E21F6B666100529F4C /* TwoViewController.m */; };
+		C98029E51F6B746C00529F4C /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98029E41F6B746C00529F4C /* flags.plist */; };
 		C99BB1B61F6A15C2008A106C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99BB1B51F6A15C2008A106C /* LoginViewController.m */; };
 		C99BB1B91F6A16FE008A106C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C99BB1B81F6A16FE008A106C /* User.m */; };
 		C99BB1BC1F6A1762008A106C /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C99BB1BB1F6A1762008A106C /* LoginViewModel.m */; };
@@ -42,6 +44,9 @@
 		85FA031CB4411D28AF288CFF /* Pods-RACDemo1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo1.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo1/Pods-RACDemo1.release.xcconfig"; sourceTree = "<group>"; };
 		A73A797AC8A09D9A6DCCAEE3 /* Pods-RACDemo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo1/Pods-RACDemo1.debug.xcconfig"; sourceTree = "<group>"; };
 		C22A5721C424ECB9F344DB8A /* libPods-RACDemo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACDemo1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98029E11F6B666100529F4C /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		C98029E21F6B666100529F4C /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		C98029E41F6B746C00529F4C /* flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
 		C99BB1B41F6A15C2008A106C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C99BB1B51F6A15C2008A106C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C99BB1B71F6A16FE008A106C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 				C99BB1B81F6A16FE008A106C /* User.m */,
 				C99BB1BA1F6A1762008A106C /* LoginViewModel.h */,
 				C99BB1BB1F6A1762008A106C /* LoginViewModel.m */,
+				C98029E11F6B666100529F4C /* TwoViewController.h */,
+				C98029E21F6B666100529F4C /* TwoViewController.m */,
+				C98029E41F6B746C00529F4C /* flags.plist */,
 				C9F8A4271F677BD6002C9B26 /* Main.storyboard */,
 				C9F8A42A1F677BD6002C9B26 /* Assets.xcassets */,
 				C9F8A42C1F677BD6002C9B26 /* LaunchScreen.storyboard */,
@@ -290,6 +298,7 @@
 			files = (
 				C9F8A42E1F677BD6002C9B26 /* LaunchScreen.storyboard in Resources */,
 				C9F8A42B1F677BD6002C9B26 /* Assets.xcassets in Resources */,
+				C98029E51F6B746C00529F4C /* flags.plist in Resources */,
 				C9F8A4291F677BD6002C9B26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98029E31F6B666100529F4C /* TwoViewController.m in Sources */,
 				C99BB1B91F6A16FE008A106C /* User.m in Sources */,
 				C99BB1B61F6A15C2008A106C /* LoginViewController.m in Sources */,
 				C99BB1BC1F6A1762008A106C /* LoginViewModel.m in Sources */,

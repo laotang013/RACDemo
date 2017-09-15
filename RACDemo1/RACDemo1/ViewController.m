@@ -184,7 +184,18 @@
      - (RACSignal *)rac_signalForControlEvents:(UIControlEvents)controlEvents;
      RAC扩展了这个方法，而这个方法的返回值类型是RACSignal,signal是信号的意思我们将获得一个信号，此时这个信号是一个冷信号，不会做任何事情,我们可以通过订阅这个信号,使其变为一个热信号，这样当事件触发信号就会给我们发送消息，发送消息的方式是一个block回调，block里会有一个id类型的参数x作为消息的内容
     6.1 RAC提供了一个宏 可以方便的将信号发送过来的值赋给某个对象的某个属性 RAC(对象的属性,值);
-   小结: 究其本质核心就是signals 也就是bind(绑定) 处理相关事务的时候首先要想到的就是绑定
+ 7.RACSubject
+    用来代替代理/通知
+    1.创建信号 2.订阅信号 3 发送信号 
+    RACSubject *subject = [RACSubject subject];
+     [subject subscribeNext:^(id x) {
+     // block:当有数据发出的时候就会调用
+     // block:处理数据
+     NSLog(@"%@",x);
+     }];
+     [subject sendNext:value];
+ 小结: 究其本质核心就是signals 也就是bind(绑定) 处理相关事务的时候首先要想到的就是绑定
+ 
  */
 
 /*
